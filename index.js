@@ -10,7 +10,6 @@ app.use(cookieParser(process.env.SECRET));
 app.use(express.static(__dirname + '/public'));
 
 
-
 var blogs = require('./routes/blogs');
 var auth = require('./routes/auth');
 var users = require('./routes/users');
