@@ -42,6 +42,7 @@ route.post('/', function(req, res) {
 // READ
 route.get('/', function(req, res) {
   res.send(process.env.DATABASE_URL);
+  
   // dbAccess.readAll({
   //   table: 'blogs',
   //   params: req.blogParent,
