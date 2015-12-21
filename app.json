@@ -1,0 +1,6 @@
+{
+  "name": "My First Blog App",
+  "description": "A featureless blog app, to be built out later",
+  "repository": "https://github.com/skuttleman/blog-app",
+  "keywords": ["node", "express", "static", "blog"]
+}
