@@ -13,7 +13,7 @@ SECRET - any string of characters used for hashing passwords stored in the datab
 
 ```sh
 $ git clone git@github.com:skuttleman/blog-app.git # or clone your own fork
-$ cd node-js-getting-started
+$ cd blog-app
 $ npm install
 $ npm start
 ```
