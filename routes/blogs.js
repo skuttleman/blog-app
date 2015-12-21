@@ -41,19 +41,21 @@ route.post('/', function(req, res) {
 
 // READ
 route.get('/', function(req, res) {
-  dbAccess.readAll({
-    table: 'blogs',
-    params: req.blogParent,
-    orderBy: {
-      column: 'created_at',
-      direction: 'desc'
-    }
-  }).then(function(blogs) {
-    res.json(blogs || []);
-  }).catch(function(err){
-    console.error(err);
-    res.json ({ success: false, message: err });
-  });
+  res.send(process.env.DATABASE_URL);
+
+  // dbAccess.readAll({
+  //   table: 'blogs',
+  //   params: req.blogParent,
+  //   orderBy: {
+  //     column: 'created_at',
+  //     direction: 'desc'
+  //   }
+  // }).then(function(blogs) {
+  //   res.json(blogs || []);
+  // }).catch(function(err){
+  //   console.error(err);
+  //   res.json ({ success: false, message: err });
+  // });
 });
 
 route.get('/:id', function(req,res) {
