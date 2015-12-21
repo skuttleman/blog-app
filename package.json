@@ -2,11 +2,12 @@
   "name": "blogTown",
   "version": "0.0.1",
   "description": "A simple blogging platfrom, built from scratch by a student",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "dependencies": {
+    "bcrypt": "^0.8.5",
     "body-parser": "^1.14.2",
     "cookie-parser": "^1.4.0",
     "cors": "^2.7.1",
