@@ -18,7 +18,7 @@ route.use('/:id/comments', comments);
 route.post('/', function(req, res) {
   var userId = req.signedCookies.userId;
   if (!userId) {
-    res.json({ success: false, message: 'You  must be logged in to preform this action.' });
+    res.json({ success: false, message: 'You  must be logged in to perform this action.' });
     return;
   } else if (!req.body.title || !req.body.body) {
     res.json({ success: false, message: 'Blog posts must have a title and a body.' });
